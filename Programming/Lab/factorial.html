@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Factorial Number</title>
+    <title>Factorial Number</title>]
+    <style src ="factorial.css" ></style>
 </head>
 <body>
         <div id="factorialButton">
-                <input type="button" onclick="factorialPrompt()" value="Factorial">
+                <input type="button" onclick="factorialPrompt()" value="Calculate Factorial">
                 <h3 id="outputFactorial"></h3>
             </div>
     
-            <script>
-            var factorialNumber;
-var outputFactorial;
+ <script>x
+  var factorialNumber;
+  var outputFactorial;
 
-function factorialPrompt()
-{
-    factorialNumber = parseInt(prompt("Tell me a number, I'll tell you the factorial"));
-    outputFactorial = factorialize(factorialNumbe);
+    function factorialPrompt()
+  {
+    factorialNumber = parseInt(prompt("Enter a number"));
+    outputFactorial = factorialize(factorialNumber);
     document.getElementById("outputFactorial").innerHTML = outputFactorial;
-}
+  }
 
-function factorialize(num) 
-{
+   function factorialize(num) 
+  {
     if (num == 0 || num == 1)
       return 1;
     for (var i = num - 1; i >= 1; i--) {
       num *= i;
     }
     return num;
-}
+  }
             </script>
 </body>
 </html>
